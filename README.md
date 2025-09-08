@@ -44,3 +44,10 @@ jogov1
 
 ## Contributing
 Feel free to submit issues or pull requests for improvements or bug fixes.
+
+## To do list
+- grid recebe grid
+- tela
+- perfis mestre/ jogador
+- interatividade do jogador
+- controle

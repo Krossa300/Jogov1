@@ -25,7 +25,7 @@ console.log(monstro);
 import { BoardGrid } from "./board/BoardGrid";
 import { BoardItem } from "./board/BoardItem";
 
-let grid: BoardGrid = new BoardGrid("Grid 1", "Batalha", 10, 10);
+let grid: BoardGrid = new BoardGrid("Grid 1", "Batalha", 10, 10, 0, "G1", "Grid Principal", 0, 0, null, [], []);
 let item1: BoardItem = new BoardItem(1, "1", "Item 1", 0, 0, grid);
 let item2: BoardItem = new BoardItem(2, "2", "Item 2", 1, 1, grid);
 grid.grid[item1.posY][item1.posX] = item1;

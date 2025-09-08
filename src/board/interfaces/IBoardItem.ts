@@ -8,11 +8,7 @@ export interface IBoardItem {
     posX: number;
     posY: number;
 
-    posGrid: IBoardGrid;
-
-    historicoMovimento: Array<[number, number, IBoardGrid]>;
-
-    registrarMovimento(movimento: [number, number, IBoardGrid]): void;
+    GridAtual: IBoardGrid;
 
     historicoAcoes: Array<[string, boolean]>;
 
