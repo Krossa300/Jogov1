@@ -1,11 +1,15 @@
 import './App.css'
-import MapaGlobal from './mapa/MapaGlobal'
+import Inventario from './componentes/Inventario'
+//import MapaGlobal from './mapa/MapaGlobal'
+import TabelaDeAtributos from './componentes/TabelaDeAtributos'
 
 function App() {
   
   return (
     <>
-      <MapaGlobal />
+      <TabelaDeAtributos />
+      <Inventario />
+      {/* <MapaGlobal /> */}
     </>
   )
 }
