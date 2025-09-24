@@ -5,8 +5,6 @@ export interface IInventario {
     grid: IBoardGrid;
     /*
     itens: IGameItem[];
-    adicionarItem(item: IGameItem): void;
-    removerItem(item: IGameItem): void;
     */
    receberItem(item: IGameItem): void;
    descartarItem(item: IGameItem): void;

@@ -8,19 +8,20 @@ Exibir inventario
 import { IGameItem } from "../items/interfaces/IGameItem";
 import { IInventario } from "../items/interfaces/IInventario";
 import { IBoardGrid } from "../tabuleiro/interfaces";
+import { IBoardItemContainer } from "../tabuleiro/interfaces/IBoardItemContainer";
 
 const inventario: IInventario = {
     grid: {
         altura: 5,
         largura: 5,
         // Matriz 5x5 (mock). Cast para simplificar o exemplo sem implementar itens reais nas células
-        celula: Array.from({ length: 5 }, () => Array(5).fill(null as unknown as IGameItem)) as unknown as any
+        celula: Array.from({ length: 5 }, () => Array(5).fill(null as unknown as IBoardItemContainer)) as unknown as any
     },
     receberItem(item: IGameItem): void {
         for (let y = 0; y < this.grid.altura; y++) {
             for (let x = 0; x < this.grid.largura; x++) {
                 if (!this.grid.celula[y][x]) {
-                    this.grid.celula[y][x] = item;
+                    this.grid.celula[y][x] = { conteudo: item, id: item.id };
                     item.posicionar(this.grid, x, y);
                     return;
                 }

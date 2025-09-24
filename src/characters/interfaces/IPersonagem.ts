@@ -4,8 +4,12 @@ import { EPersonagemProperty } from "./EPersonagemProperty";
 import { EPersonagemRace } from "./EPersonagemRace";
 import { EPersonagemSize } from "./EPersonagemSize";
 import { IInventario } from "../../items/interfaces/IInventario";
+import { INomeavel } from "../../InterfacesBase/INomeavel";
+import { IIdentificavel } from "../../InterfacesBase/IIdentificavel";
+import { IDisplayable } from "../../InterfacesBase/IDisplayable";
+import { IPosicionavel } from "../../InterfacesBase/IPosicionavel";
 
-export interface IPersonagem extends IBoardItem {
+export interface IPersonagem extends IBoardItem, INomeavel, IIdentificavel, IDisplayable, IPosicionavel {
     nivel: number;
     hp: number;
     race: EPersonagemRace;

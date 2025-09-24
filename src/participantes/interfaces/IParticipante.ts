@@ -1,7 +1,7 @@
+import { IIdentificavel } from "../../InterfacesBase/IIdentificavel";
+import { INomeavel } from "../../InterfacesBase/INomeavel";
 import { EMemberRole } from "./EMemberRole";
 
-export interface IParticipante {
-    id: string;
-    nome: string;
+export interface IParticipante extends INomeavel, IIdentificavel {
     role: EMemberRole;
 }

@@ -1,0 +1,17 @@
+- criar uma partida
+- iniciar a partida
+- encerrar a partida
+- adicionar mapas a partira
+- adicionar grids a partida
+- exibix mapa
+- esconder mapa
+- criar participantes
+- adicionar participantes a partida
+- remover participantes da partida
+- comportamento de cada participante(atividade continua)
+- criar um personagem
+- atribuir um personagem a um participante
+-
+-
+-
+-

@@ -30,8 +30,8 @@ const Inventario: React.FC = () => {
                                         <GameItemDisplay
                                             mode="minificado"
                                             imageAlt={`Célula ${y},${x}`}
-                                            title={celula.nome}
-                                            description={celula.descricao}
+                                            title={celula.conteudo.nome}
+                                            description={celula.conteudo.descricao}
                                         />
                                     )}
                                 </td>
