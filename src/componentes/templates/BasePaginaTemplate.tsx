@@ -1,8 +1,20 @@
 import { Outlet } from 'react-router-dom';
 
 const BasePaginaTemplate = () => {
-    return (    
-            <Outlet />        
+    return (
+        <div id="base-pagina-template"
+        style={{
+            minHeight: '100vh',
+            width: '100vw',
+            display: 'flex',
+            flexDirection: 'column',
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            placeItems: 'center'
+        }}>
+            <Outlet />
+        </div>
     );
 };
 

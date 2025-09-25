@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import { IJogador } from "../../participantes/interfaces/IJogador";
 import { IMestre } from "../../participantes/interfaces/IMestre";
 import { IParticipante } from "../../participantes/interfaces/IParticipante";
@@ -21,5 +22,5 @@ export interface IPartida {
     removerJogador(jogador: IJogador): void;   
     salvarEstado(): void;
     carregarEstado(): void;
-    criarMundo(): void;
+    criarMundo(): ReactNode | null;
 }

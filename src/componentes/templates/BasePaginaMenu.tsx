@@ -1,14 +1,22 @@
 import { Outlet } from 'react-router-dom';
+import BotaoDeInicio from '../BotaoDeInicio';
 
 const BasePaginaMenu = () => {
     return (    
-            <div style={{ backgroundColor: '#c98cfcff', margin: '20px', fontFamily: 'Arial, sans-serif', width: '1500px', height: '100vh', padding: '10px' }}>
-                 <ul>
-                     <li>Item 1</li>
-                     <li>Item 2</li>
-                     <li>Item 3</li>
-                 </ul>
-                 <Outlet />
+            <div
+                id="base-pagina-menu"
+                style={{
+                    backgroundColor: '#ffadb1ff',
+                    margin: '20px',
+                    fontFamily: 'Arial, sans-serif',
+                    width: '1800px',
+                    height: '100vh',
+                    padding: '10px',
+                    borderRadius: '20px',
+                }}
+            >
+                <BotaoDeInicio />
+                <Outlet />
             </div>
             
     );
