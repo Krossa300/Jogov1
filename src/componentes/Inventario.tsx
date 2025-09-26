@@ -1,6 +1,6 @@
 import React from 'react';
 import { GameItemDisplay } from './GameItemDisplay';
-import { inventario } from '../Simulador/Simulador2';
+import { inventario } from '../simulador/Simulador2';
 
 const tableStyle: React.CSSProperties = {
     borderCollapse: 'collapse',
